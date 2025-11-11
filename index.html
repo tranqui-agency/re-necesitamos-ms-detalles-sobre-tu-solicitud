@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florcitas del barri - Floristería</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-rose-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-6">
+            <h1 class="text-3xl font-bold text-rose-600">Florcitas del barri</h1>
+            <p class="text-gray-600 mt-1">Tu floristería de confianza</p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1200&h=400&fit=crop" alt="Flores hermosas" class="w-full h-64 object-cover">
+            <div class="p-8 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Flores frescas para cada ocasión</h2>
+                <p class="text-xl text-gray-600">Ramos, arreglos florales y más</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Flores -->
+    <section class="max-w-6xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Nuestras Flores</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400&h=300&fit=crop" alt="Ramo de rosas" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-800">Ramos de Rosas</h3>
+                    <p class="text-gray-600 text-sm mt-2">Elegantes y románticos</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=400&h=300&fit=crop" alt="Flores mixtas" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-800">Arreglos Mixtos</h3>
+                    <p class="text-gray-600 text-sm mt-2">Coloridos y alegres</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=400&h=300&fit=crop" alt="Girasoles" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-800">Girasoles</h3>
+                    <p class="text-gray-600 text-sm mt-2">Llenos de luz y energía</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="max-w-6xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-lg p-8">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contáctanos</h2>
+            
+            <!-- Teléfono destacado -->
+            <div class="text-center mb-8 p-6 bg-rose-100 rounded-lg">
+                <p class="text-gray-700 text-lg mb-2">Llámanos o escríbenos por WhatsApp:</p>
+                <a href="tel:63355252" class="text-4xl font-bold text-rose-600 hover:text-rose-700">63355252</a>
+            </div>
+
+            <!-- Formulario -->
+            <form id="contactForm" class="max-w-2xl mx-auto">
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold mb-2" for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                </div>
+                
+                <div class="mb-4">
+                    <label class="block text-gray-700 font-semibold mb-2" for="email">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500">
+                </div>
+                
+                <div class="mb-6">
+                    <label class="block text-gray-700 font-semibold mb-2" for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500"></textarea>
+                </div>
+                
+                <button type="submit" class="w-full bg-rose-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-rose-700 transition duration-300">Enviar Mensaje</button>
+            </form>
+            
+            <div id="formMessage" class="mt-4 text-center hidden"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-12 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-lg font-semibold mb-2">Florcitas del barri</p>
+            <p class="text-gray-400">Teléfono: <a href="tel:63355252" class="text-rose-400 hover:text-rose-300">63355252</a></p>
+            <p class="text-gray-400 mt-4">&copy; 2024 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const messageDiv = document.getElementById('formMessage');
+            messageDiv.className = 'mt-4 text-center p-4 bg-green-100 text-green-700 rounded-lg';
+            messageDiv.textContent = '¡Gracias por tu mensaje! Te contactaremos pronto.';
+            messageDiv.classList.remove('hidden');
+            this.reset();
+            setTimeout(() => {
+                messageDiv.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
