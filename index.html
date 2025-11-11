@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florcitas del Barri - Floristería en Sants, Barcelona</title>
+    <meta name="description" content="Floristería de barrio en Sants, Barcelona. Flores frescas y arreglos florales. Abierto de lunes a viernes de 8:00 a 20:00h.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'flor-green': '#2d5016',
+                        'flor-light': '#7fb069',
+                        'flor-blue': '#4a90e2'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-flor-green text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-3xl font-bold">🌸 Florcitas del Barri</h1>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[500px] bg-gradient-to-br from-flor-light to-flor-green">
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white px-4">
+                <h2 class="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">Florcitas del Barri</h2>
+                <p class="text-xl md:text-2xl drop-shadow-md">Tu floristería de confianza en Sants</p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold text-flor-green mb-8 text-center">Quiénes Somos</h2>
+            <div class="prose prose-lg mx-auto text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    En <strong>Florcitas del Barri</strong>, somos más que una floristería: somos parte del corazón de Sants. 
+                    Desde hace años, nos dedicamos a llenar de color y alegría cada rincón del barrio con flores frescas 
+                    y arreglos florales únicos.
+                </p>
+                <p class="mb-4">
+                    Nuestra pasión es crear momentos especiales a través de las flores. Ya sea para celebrar una ocasión 
+                    importante, expresar tus sentimientos o simplemente alegrar el día de alguien, en Florcitas del Barri 
+                    encontrarás la flor perfecta.
+                </p>
+                <p>
+                    Trabajamos con flores de temporada, siempre frescas y de la mejor calidad. Nuestro equipo te asesorará 
+                    con cariño para que encuentres exactamente lo que buscas. ¡Ven a conocernos!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="py-16 bg-gradient-to-br from-flor-light/10 to-flor-green/10">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Horario -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-flor-blue">
+                    <div class="flex items-start mb-4">
+                        <svg class="w-8 h-8 text-flor-blue mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="text-2xl font-bold text-flor-green mb-4">Horario</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <p class="flex justify-between">
+                                    <span class="font-semibold">Lunes - Viernes:</span>
+                                    <span>8:00 - 20:00h</span>
+                                </p>
+                                <p class="flex justify-between text-gray-500">
+                                    <span class="font-semibold">Sábado - Domingo:</span>
+                                    <span>Cerrado</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ubicación -->
+                <div class="bg-white rounded-lg shadow-lg p-8 border-t-4 border-flor-green">
+                    <div class="flex items-start mb-4">
+                        <svg class="w-8 h-8 text-flor-green mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <div>
+                            <h3 class="text-2xl font-bold text-flor-green mb-4">Ubicación</h3>
+                            <p class="text-gray-700 mb-2">
+                                <span class="font-semibold">Barrio de Sants</span><br>
+                                Barcelona, España
+                            </p>
+                            <p class="text-sm text-gray-600 mt-4">
+                                📍 En el corazón del barrio, cerca de ti
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-flor-green text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Necesitas flores frescas?</h2>
+            <p class="text-xl mb-8">Ven a visitarnos y descubre nuestros arreglos florales</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="tel:+34" class="bg-white text-flor-green px-8 py-3 rounded-full font-bold hover:bg-flor-blue hover:text-white transition-colors">
+                    📞 Llámanos
+                </a>
+                <a href="#" class="bg-flor-blue text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-flor-green transition-colors">
+                    📍 Cómo llegar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2024 Florcitas del Barri - Floristería en Sants, Barcelona</p>
+            <p class="text-sm text-gray-500 mt-2">🌸 Flores frescas con amor desde el barrio</p>
+        </div>
+    </footer>
+</body>
+</html>
