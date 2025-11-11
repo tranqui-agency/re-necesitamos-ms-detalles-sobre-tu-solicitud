@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florcitas del barri - Floristería en Sants, Barcelona</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#22c55e',
+                        accent: '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-br from-primary to-green-600 text-white">
+        <div class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Florcitas del barri</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90">Tu floristería de confianza en Sants</p>
+            <div class="max-w-4xl mx-auto rounded-lg overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?w=1200&h=600&fit=crop" 
+                     alt="Floristería Florcitas del barri" 
+                     class="w-full h-64 md:h-96 object-cover">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl font-bold text-center mb-8 text-primary">Quiénes somos</h2>
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <p class="text-lg leading-relaxed mb-4">
+                    En <strong>Florcitas del barri</strong>, llevamos años siendo parte del corazón de Sants. 
+                    Somos una floristería de barrio que se enorgullece de ofrecer flores frescas y de calidad 
+                    a nuestros vecinos y clientes.
+                </p>
+                <p class="text-lg leading-relaxed mb-4">
+                    Cada ramo que creamos está hecho con cariño y dedicación, seleccionando las mejores flores 
+                    para cada ocasión especial. Ya sea para celebrar un cumpleaños, expresar amor, o simplemente 
+                    alegrar el día de alguien, estamos aquí para ayudarte.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Nuestro compromiso es con la frescura, la calidad y el servicio personalizado. 
+                    Ven a visitarnos y descubre por qué somos la floristería favorita del barrio.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Información</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Horario -->
+                <div class="bg-gradient-to-br from-accent to-blue-600 text-white rounded-lg shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold">Horario</h3>
+                    </div>
+                    <div class="space-y-2 text-lg">
+                        <p class="font-semibold">Lunes a Viernes</p>
+                        <p class="text-3xl font-bold">8:00 - 20:00</p>
+                    </div>
+                </div>
+
+                <!-- Ubicación -->
+                <div class="bg-gradient-to-br from-primary to-green-600 text-white rounded-lg shadow-lg p-8">
+                    <div class="flex items-center mb-4">
+                        <svg class="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <h3 class="text-2xl font-bold">Ubicación</h3>
+                    </div>
+                    <div class="space-y-2 text-lg">
+                        <p class="font-semibold">Barrio de Sants</p>
+                        <p class="text-2xl font-bold">Barcelona</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">🌸 <strong>Florcitas del barri</strong> 🌸</p>
+            <p class="text-gray-400">Flores frescas con el cariño de siempre</p>
+        </div>
+    </footer>
+</body>
+</html>
